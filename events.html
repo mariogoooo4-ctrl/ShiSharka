@@ -1,7 +1,7 @@
-<!DOCTYPE html><html lang="bg"><head>
+<!DOCTYPE html><html class="light" lang="bg"><head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>Контакти | ШиШарка Арт Студио</title>
+<title>Събития | ШиШарка Арт Студио</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
 <script id="tailwind-config">
@@ -10,53 +10,29 @@
         theme: {
           extend: {
             "colors": {
-                    "error": "#ba1a1a",
-                    "on-error-container": "#93000a",
-                    "secondary-fixed": "#94f990",
-                    "surface-bright": "#fbf9f5",
-                    "tertiary-fixed": "#ffdf9e",
-                    "on-error": "#ffffff",
-                    "inverse-on-surface": "#f2f0ed",
-                    "primary": "#5f3e32",
-                    "on-secondary-fixed-variant": "#005313",
-                    "surface-container": "#efeeea",
-                    "on-tertiary-fixed-variant": "#5b4300",
-                    "tertiary-container": "#785900",
-                    "inverse-primary": "#ebbcac",
-                    "outline-variant": "#d4c3bd",
-                    "on-tertiary": "#ffffff",
-                    "tertiary": "#5a4200",
-                    "on-primary-fixed": "#2e150b",
-                    "on-tertiary-container": "#ffd16c",
-                    "on-surface-variant": "#504440",
-                    "secondary-fixed-dim": "#78dc77",
-                    "error-container": "#ffdad6",
-                    "primary-fixed-dim": "#ebbcac",
                     "background": "#fbf9f5",
-                    "surface-tint": "#7a5649",
-                    "on-primary-container": "#fdcdbc",
+                    "primary": "#5f3e32",
                     "secondary": "#006e1c",
-                    "on-surface": "#1b1c1a",
-                    "tertiary-fixed-dim": "#fabd00",
-                    "primary-fixed": "#ffdbcf",
-                    "surface": "#fbf9f5",
-                    "on-primary": "#ffffff",
-                    "on-secondary-container": "#00731e",
-                    "on-background": "#1b1c1a",
-                    "surface-variant": "#e4e2de",
-                    "on-tertiary-fixed": "#261a00",
-                    "on-primary-fixed-variant": "#603f33",
-                    "surface-container-high": "#eae8e4",
-                    "surface-container-low": "#f5f3ef",
                     "on-secondary": "#ffffff",
-                    "primary-container": "#795548",
+                    "tertiary": "#5a4200",
+                    "on-background": "#1b1c1a",
+                    "surface": "#fbf9f5",
+                    "on-surface": "#1b1c1a",
+                    "surface-variant": "#e4e2de",
+                    "on-surface-variant": "#504440",
                     "outline": "#82746f",
+                    "outline-variant": "#d4c3bd",
+                    "surface-container": "#efeeea",
+                    "surface-container-low": "#f5f3ef",
+                    "surface-container-high": "#eae8e4",
                     "surface-container-highest": "#e4e2de",
-                    "inverse-surface": "#30312e",
-                    "surface-dim": "#dbdad6",
+                    "surface-container-lowest": "#ffffff",
                     "secondary-container": "#91f78e",
-                    "on-secondary-fixed": "#002204",
-                    "surface-container-lowest": "#ffffff"
+                    "on-secondary-container": "#00731e",
+                    "tertiary-fixed": "#ffdf9e",
+                    "on-tertiary-fixed": "#261a00",
+                    "primary-container": "#795548",
+                    "on-primary": "#ffffff"
             },
             "borderRadius": {
                     "DEFAULT": "0.25rem",
@@ -77,268 +53,283 @@
             },
             "fontFamily": {
                     "sans": ["Montserrat", "sans-serif"],
-                    "headline-xl": ["Montserrat"],
-                    "label-md": ["Montserrat"],
-                    "body-lg": ["Montserrat"],
-                    "headline-lg": ["Montserrat"],
-                    "headline-xl-mobile": ["Montserrat"],
-                    "body-md": ["Montserrat"],
-                    "headline-md": ["Montserrat"]
-            },
-            "fontSize": {
-                    "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
-                    "label-md": ["14px", {"lineHeight": "20px", "fontWeight": "600"}],
-                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
-                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
-                    "headline-xl-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "800"}],
-                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
-                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "700"}]
+                    "headline-xl": ["Montserrat", "sans-serif"],
+                    "label-md": ["Montserrat", "sans-serif"],
+                    "body-lg": ["Montserrat", "sans-serif"],
+                    "headline-lg": ["Montserrat", "sans-serif"],
+                    "headline-xl-mobile": ["Montserrat", "sans-serif"],
+                    "body-md": ["Montserrat", "sans-serif"],
+                    "headline-md": ["Montserrat", "sans-serif"]
             }
           },
         },
       }
     </script>
 <style>
-        body {
-            background-color: #fbf9f5;
-            color: #1b1c1a;
-            -webkit-font-smoothing: antialiased;
-            font-family: 'Montserrat', sans-serif;
-        }
+        body { font-family: 'Montserrat', sans-serif; }
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
-        .btn-sticker {
-            position: relative;
-            transition: all 0.2s ease;
-            border-bottom: 3px solid rgba(0,0,0,0.2);
+        .chunky-button {
+            box-shadow: 0 4px 0 0 #005313;
+            transition: all 0.1s ease;
         }
-        .btn-sticker:active {
+        .chunky-button:active {
             transform: translateY(2px);
-            border-bottom-width: 1px;
+            box-shadow: 0 2px 0 0 #005313;
         }
-        .bento-card {
-            background: #ffffff;
-            border: 1px solid rgba(95, 62, 50, 0.1);
+        .chunky-button-secondary {
+            box-shadow: 0 4px 0 0 #fabd00;
+            transition: all 0.1s ease;
+        }
+        .chunky-button-secondary:active {
+            transform: translateY(2px);
+            box-shadow: 0 2px 0 0 #fabd00;
+        }
+        .art-card {
             transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
         }
-        .bento-card:hover {
-            transform: translateY(-4px);
+        .art-card:hover {
+            transform: scale(1.01);
         }
-        .faq-transition {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease-out;
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
         }
-        .faq-item.active .faq-transition {
-            max-height: 300px;
-        }
-        .faq-item.active .faq-icon {
-            transform: rotate(180deg);
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
         }
     </style>
 </head>
-<body class="font-sans overflow-x-hidden">
+<body class="bg-background text-on-background overflow-x-hidden">
 <!-- TopNavBar -->
-<nav class="w-full sticky top-0 z-50 bg-surface/80 backdrop-blur-md shadow-[0_4px_12px_rgba(95,62,50,0.1)]">
+<nav class="w-full sticky top-0 z-50 bg-surface/80 backdrop-blur-md shadow-sm border-b border-outline-variant/30">
 <div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-7xl mx-auto">
-<div class="font-headline-md text-headline-md text-primary italic font-bold">ШиШарка Арт Студио</div>
-<div class="hidden md:flex items-center gap-8">
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="index.html">Начало</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#">Курсове</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="events.html">Събития</a>
-<a class="text-secondary font-bold border-b-2 border-secondary-fixed-dim pb-1 font-label-md text-label-md" href="contact.html">Контакт</a>
+<div class="text-xl md:text-2xl text-primary italic font-extrabold cursor-pointer">
+                ШиШарка Арт Студио
+            </div>
+<div class="hidden md:flex gap-md items-center">
+<a class="text-sm font-semibold text-on-surface-variant hover:text-primary transition-colors" href="#">Начало</a>
+<a class="text-sm font-semibold text-on-surface-variant hover:text-primary transition-colors" href="#">Курсове</a>
+<a class="text-sm font-bold text-secondary border-b-2 border-secondary pb-1" href="#">Събития</a>
+<a class="text-sm font-semibold text-on-surface-variant hover:text-primary transition-colors" href="#">Контакт</a>
+<button class="ml-sm chunky-button bg-secondary text-on-secondary px-6 py-2 rounded-lg text-sm font-bold">Запиши се</button>
 </div>
-<button class="bg-secondary text-on-secondary px-6 py-2 rounded-full font-label-md text-label-md hover:scale-105 transition-transform btn-sticker">
-                Запиши се
-            </button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
 </div>
 </nav>
-<main class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop py-xl">
+<main class="max-w-7xl mx-auto">
 <!-- Hero Section -->
-<header class="mb-xl text-center md:text-left">
-<h1 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary mb-sm">
-                Да творим заедно!
-            </h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl">Имате въпроси за нашите ателиета или искате да организирате творчески рожден ден? Ние сме тук, за да помогнем на вашето дете да открие своя вътрешен&nbsp;артист.</p>
-</header>
-<!-- Main Content Grid -->
-<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
-<!-- Contact Form Card -->
-<div class="md:col-span-7 bento-card rounded-xl p-md md:p-lg flex flex-col">
-<h2 class="font-headline-md text-headline-md text-primary mb-md">Изпратете ни съобщение</h2>
-<form class="space-y-sm flex-grow">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-sm">
-<div class="flex flex-col gap-xs">
-<label class="font-label-md text-label-md text-on-surface-variant px-1">Вашето име</label>
-<input class="w-full h-14 rounded-lg border-2 border-outline-variant bg-surface-container-lowest px-4 focus:border-secondary focus:ring-0 transition-colors" placeholder="Мария Иванова" type="text">
-</div>
-<div class="flex flex-col gap-xs">
-<label class="font-label-md text-label-md text-on-surface-variant px-1">Имейл адрес</label>
-<input class="w-full h-14 rounded-lg border-2 border-outline-variant bg-surface-container-lowest px-4 focus:border-secondary focus:ring-0 transition-colors" placeholder="maria@example.com" type="email">
-</div>
-</div>
-<div class="flex flex-col gap-xs">
-<label class="font-label-md text-label-md text-on-surface-variant px-1">Тема</label>
-<select class="w-full h-14 rounded-lg border-2 border-outline-variant bg-surface-container-lowest px-4 focus:border-secondary focus:ring-0 transition-colors">
-<option>Запитване за урок</option>
-<option>Детски рожден ден</option>
-<option>Лятна академия</option>
-<option>Друго</option>
-</select>
-</div>
-<div class="flex flex-col gap-xs">
-<label class="font-label-md text-label-md text-on-surface-variant px-1">Вашето съобщение</label>
-<textarea class="w-full rounded-lg border-2 border-outline-variant bg-surface-container-lowest p-4 focus:border-secondary focus:ring-0 transition-colors" placeholder="Разкажете ни малко повече..." rows="5"></textarea>
-</div>
-<div class="flex mt-md justify-start">
-<button class="w-full md:w-auto bg-primary text-on-primary px-xl py-4 rounded-full font-label-md text-label-md btn-sticker" type="submit">
-                            Изпрати съобщение
+<section class="px-margin-mobile md:px-margin-desktop py-xl relative overflow-hidden">
+<div class="absolute -top-10 -right-10 w-64 h-64 bg-tertiary-fixed/30 rounded-full blur-3xl -z-10 animate-pulse"></div>
+<div class="absolute top-1/2 -left-10 w-48 h-48 bg-secondary-container/20 rounded-full blur-3xl -z-10"></div>
+<div class="flex flex-col md:flex-row items-center gap-lg">
+<div class="md:w-1/2 space-y-md">
+<span class="bg-secondary-container text-on-secondary-container px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Празнувайте с нас</span>
+<h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-primary leading-tight">
+                        Магически събития за <span class="text-secondary italic">малки творци</span>
+</h1>
+<p class="text-lg text-on-surface-variant max-w-lg">
+                        От рождени дни с пръски боя до омагьосващи празнични работилници, ние превръщаме всеки повод в творчески шедьовър.
+                    </p>
+<div class="flex flex-wrap gap-sm pt-4">
+<button class="chunky-button bg-secondary text-on-secondary px-8 py-4 rounded-lg text-sm font-bold flex items-center gap-2">
+                            Резервирай събитие <span class="material-symbols-outlined">celebration</span>
+</button>
+<button class="chunky-button-secondary bg-tertiary-fixed text-on-tertiary-fixed px-8 py-4 rounded-lg text-sm font-bold">
+                            Виж галерията
                         </button>
 </div>
-</form>
 </div>
-<!-- Info Sidebar -->
-<div class="md:col-span-5 flex flex-col gap-gutter">
-<!-- Quick Contact Card -->
-<div class="bento-card rounded-xl p-md bg-secondary-container text-on-secondary-container">
-<h3 class="font-headline-md text-headline-md mb-sm">Контакти</h3>
-<div class="space-y-sm">
-<div class="flex items-center gap-sm">
-<span class="material-symbols-outlined text-secondary" data-icon="call">call</span>
-<span class="font-label-md text-label-md text-primary">+359 888 123 456</span>
-</div>
-<div class="flex items-center gap-sm">
-<span class="material-symbols-outlined text-secondary" data-icon="mail">mail</span>
-<span class="font-label-md text-label-md text-primary">hello@shisharka-art.bg</span>
-</div>
-<div class="flex items-start gap-sm">
-<span class="material-symbols-outlined text-secondary mt-1" data-icon="location_on">location_on</span>
-<span class="font-label-md text-label-md text-primary">ул. "Горска Приказка" 12,<br>кв. Лозенец, София</span>
+<div class="md:w-1/2 relative">
+<div class="bg-surface-container rounded-3xl p-4 rotate-2 shadow-xl">
+<div class="aspect-video rounded-2xl overflow-hidden shadow-inner">
+<img alt="Деца в ШиШарка Арт Студио" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7n0rH5qWvBM2SWU1cCe4W7YlXiIsPg53iWkIyr31v5bW-FzPWBErhMd_sXvgfJK3WZUPO0dlC78k4sEaVSOJM7itwIcF_rxiM7XNJQKLKxy1RuHCg_RcNkSxxxIKdPQgSKI4Xb0BiPN4FKcQA25R9PJ2lLtp9th8nXOK-N-_ITsAIMG0AXP7-BRGkALMFs0AMvRGY4BHY4rKx3OLlytZ3mDFb7gGnO4NuGRLgLzaAQSXfLjBZMlKSCvIpnxC3DnLlHP3qubwAymk">
 </div>
 </div>
-<div class="mt-md flex gap-sm">
-<a class="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-on-secondary hover:scale-110 transition-transform" href="#">
-<span class="material-symbols-outlined" data-icon="share">share</span>
-</a>
-<a class="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-on-secondary hover:scale-110 transition-transform" href="#">
-<span class="material-symbols-outlined" data-icon="photo_camera">photo_camera</span>
-</a>
-</div>
-</div>
-<!-- Map Placeholder Card -->
-<div class="bento-card rounded-xl overflow-hidden h-64 relative group">
-<div class="absolute inset-0 z-0" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBxRd2UI_W4FplbBnwRO6dnhwzj7Oea5rsG5olJKUBQkjZ68_P4qhe4_yxtRnivjmdXHUXlzdAzrLUZ2xulZ1L_4uRC8EoHplpucNbhQ8K8KOI0Z2iFhfI78FIQYVt2PJdnsarvm5NxazNnRJGCY17NgtRVfy0pZnV95p4hoP1gxtfgTMk1hN8DbHxNp84oBcRlsWf0r3TjUVZ598ciWtnPp2Dja2u_YRvpiaUh2mJX6OwRXYpQB6XodDUFVcKlqjppld73pPkFgxY'); background-size: cover; background-position: center;"></div>
-<div class="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors"></div>
-<div class="absolute bottom-4 left-4 z-10 bg-surface px-4 py-2 rounded-full shadow-lg flex items-center gap-2">
-<span class="material-symbols-outlined text-secondary" data-icon="directions">directions</span>
-<span class="font-label-md text-label-md">Виж в Google Maps</span>
-</div>
-</div>
-<!-- Studio Hours Card -->
-<div class="bento-card rounded-xl p-md bg-tertiary-container/30">
-<h3 class="font-headline-md text-headline-md text-tertiary mb-sm">Работно време</h3>
-<ul class="space-y-xs font-body-md text-body-md">
-<li class="flex justify-between"><span>Пон - Пет:</span> <span class="font-bold">10:00 - 19:00</span></li>
-<li class="flex justify-between"><span>Събота:</span> <span class="font-bold">09:00 - 18:00</span></li>
-<li class="flex justify-between text-on-surface-variant opacity-60"><span>Неделя:</span> <span>Почивен ден</span></li>
-</ul>
-</div>
-</div>
-</div>
-<!-- FAQ Section -->
-<section class="mt-xl">
-<div class="mb-lg text-left">
-<h2 class="font-headline-xl-mobile md:font-headline-lg text-headline-xl-mobile md:text-headline-lg text-primary mb-xs">Въпроси и отговори</h2>
-<p class="font-body-md text-body-md text-on-surface-variant">Всичко, което родителите трябва да знаят преди посещение.</p>
-</div>
-<div class="max-w-3xl mx-auto space-y-sm">
-<!-- FAQ Item 1 -->
-<div class="faq-item bento-card rounded-xl p-md cursor-pointer" onclick="this.classList.toggle('active')">
-<div class="flex justify-between items-center">
-<h4 class="font-label-md text-label-md md:font-headline-md md:text-headline-md text-primary">Какво трябва да носи детето ми?</h4>
-<span class="material-symbols-outlined faq-icon transition-transform" data-icon="expand_more">expand_more</span>
-</div>
-<div class="faq-transition">
-<p class="pt-sm font-body-md text-body-md text-on-surface-variant">Препоръчваме удобни дрехи, които не се страхуват от малко боя! Ние осигуряваме престилки, но творчеството понякога е разхвърляно. Всички арт материали са включени в цената на&nbsp;урока.</p>
-</div>
-</div>
-<!-- FAQ Item 2 -->
-<div class="faq-item bento-card rounded-xl p-md cursor-pointer" onclick="this.classList.toggle('active')">
-<div class="flex justify-between items-center">
-<h4 class="font-label-md text-label-md md:font-headline-md md:text-headline-md text-primary">Какви са правилата на студиото?</h4>
-<span class="material-symbols-outlined faq-icon transition-transform" data-icon="expand_more">expand_more</span>
-</div>
-<div class="faq-transition">
-<ul class="pt-sm font-body-md text-body-md text-on-surface-variant list-disc pl-5 space-y-xs">
-<li>Уважаваме творчеството на другите.</li>
-<li>Почистваме своето работно място след края на урока.</li>
-<li>Тичането в студиото е забранено заради безопасността на децата и творбите.</li>
-<li>Забавляваме се и експериментираме без страх от грешки!</li>
-</ul>
-</div>
-</div>
-<!-- FAQ Item 3 -->
-<div class="faq-item bento-card rounded-xl p-md cursor-pointer" onclick="this.classList.toggle('active')">
-<div class="flex justify-between items-center">
-<h4 class="font-label-md text-label-md md:font-headline-md md:text-headline-md text-primary">Трябва ли да придружавам детето си?</h4>
-<span class="material-symbols-outlined faq-icon transition-transform" data-icon="expand_more">expand_more</span>
-</div>
-<div class="faq-transition">
-<p class="pt-sm font-body-md text-body-md text-on-surface-variant">За деца под 5 години присъствието на родител е задължително. За по-големите артисти (6+ години), родителите могат да ги оставят и да се върнат в края на заниманието. Разполагаме и с уютен кът за изчакване с кафе и&nbsp;чай.</p>
+<div class="absolute -bottom-6 -left-6 bg-surface p-4 rounded-xl shadow-lg -rotate-6 border border-outline-variant">
+<p class="text-2xl font-bold text-secondary">100+ партита</p>
+<p class="text-sm font-medium text-on-surface-variant">Организирани тази година!</p>
 </div>
 </div>
 </div>
 </section>
-<!-- Visual Atmosphere -->
-<section class="mt-xl grid grid-cols-2 md:grid-cols-4 gap-sm">
-<div class="aspect-square rounded-xl overflow-hidden bento-card">
-<img alt="Art Materials" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0HyeJwVnndsYTdkXQiv526IxlMeTbNuBAmY6msbs8cqO2ef-XNjLhPc45Z4q7gbK0mUZxmKfTSHoyn7ZVgkwLZqNeDLgq9y9ywaKU8sdqeFSZiL_JaKZQPMmhlrqdv-dOZ7Ixn4MCz1_BgSxf_1Wz4v3RwVwfxFGJwQlsSrB2gv0l9BLrPVvtSCDmjKt0h_ulMIVSDjQQnoX4HECRUHd40SGIZvEt951zsl12gFUZZBO280unVai7GMO44bKGBn_fJTzr-tde4Cs">
+<!-- Event Types Section -->
+<section class="px-margin-mobile md:px-margin-desktop py-xl bg-surface-container-low rounded-[48px] mx-margin-mobile md:mx-margin-desktop">
+<div class="text-center mb-lg">
+<h2 class="text-3xl md:text-4xl font-bold text-primary mb-sm">Какво се случва в студиото?</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">Открийте нашата селекция от творчески празненства, създадени да разпалят въображението.</p>
 </div>
-<div class="aspect-square rounded-xl overflow-hidden bento-card">
-<img alt="Children creating art" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaPnKSXo5pXHgQyRWi3AJlZHMJG1-W_0CwH6ah-MZ7s-Ya73w9ZaMnimnlcRQ5FBHElt3pFXISR2-TQeIgQS9yhw1hEGx1H_2CJtLDoSvwXh9peDi1CJPDGGIzB-dubZ6KtdkTwLMWwj4XezPVyLEgQdI5e_qJ_oFmPf4UZ0yZ-LIkvspLn7l-0bEgDyeMELkOnpm7wpX66WRESagBw0YgDtwabeJ5xTb5ap7IIApkSXvVDrW7tVWaC7HEQ9Xador9tzHYxTzL-7w">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-md">
+<!-- Birthday Parties -->
+<div class="md:col-span-8 art-card bg-surface-container-lowest border border-outline-variant rounded-xl p-md flex flex-col md:flex-row gap-md">
+<div class="md:w-1/2 rounded-lg overflow-hidden">
+<img alt="Рожден ден" class="w-full h-64 md:h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEXM-nBu8zG7uorr58sffqCe8x-AzlrigimunzWDl28vAq7zHyyoJgMdFVGc-0N6ew2389UsfDIC4jbgAjJHPmbkcUYtAuCf2HUYE6dxsmScVcSfgwlTB5zdYlL5IXMkfBOpQ88VvxiGlv9I7FfHe82xDR73YtgtVJwJhNTuQOXVUkuu9uM_z0SMjD6La9brwTpJs7pVZyEd0NA72MpG0yB1yT9_JqOklz28KRMRnSmu7J2sa4oZU_Pfn47XJhQ4ZKDV0TLvCzM9c">
 </div>
-<div class="hidden md:block aspect-square rounded-xl overflow-hidden bento-card">
-<img alt="Studio Supplies" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5Sdlmmbl9sgp4XupqXkSoEvNE0rBNzbGuYSjh5InQVyq7pyHauj7mtYG2wCSTzyO2-x-BhCkjDiP34SIi2YaOHg7nPhnxU8gXt-fIGBIWvKJeO7da9QWG3Im-NVDIWZUufeORW51lDJoNpfYyfjpLLCSTvesh0Eiv3yP5NcM7U9xyMVFLxa2Q1BugB3KAlNjvLlja5flWwlLwg9uWC1A2pnQo-0kLs1Xjk_yV5_SvYXUipzLyGutGk5lqvshdbe82_7pf4T70qD4">
+<div class="md:w-1/2 flex flex-col justify-between py-2 items-start">
+<div class="space-y-sm">
+<div class="flex items-center gap-2 text-secondary">
+<span class="material-symbols-outlined text-xl">cake</span>
+<span class="text-xs font-bold uppercase">Най-популярни</span>
 </div>
-<div class="hidden md:block aspect-square rounded-xl overflow-hidden bento-card">
-<img alt="Pinecone craft" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCF_qHfv00IYnm7iJziNT0UgTjIYkppLElS5N1BmfyZx-M5OsXT75Vn4FUFwDmJW6qT7yfA1eLnA1v2L0fk6mHKIS50BoX0wpbZNXjhTdEPp_iL4yT2xOV6PiMNl-atqyAEXispcuRkST86lKx05dldLWFwJqe1l6FgPbGtiwLmmox4rdse5FGQUYuO4AzG4Hctj1ycQ4Q1Npqcr5bD0qLDiDBKdQlyBJxveYSSZJDOk1KEGObhx4mfRDtOiuhWY7N0bmUCcQ-DLrQ">
+<h3 class="text-2xl font-bold text-primary">Творчески рождени&nbsp;дни</h3>
+<p class="text-on-surface-variant text-sm">2-часов изключителен достъп до студиото, индивидуални арт проекти за всеки гост и нашите специални шишаркови парти комплекти.</p>
+<ul class="space-y-1">
+<li class="flex items-center gap-2 text-sm text-on-surface"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span> Включени материали</li>
+<li class="flex items-center gap-2 text-sm text-on-surface"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span> Професионални арт инструктори</li>
+</ul>
+</div>
+<button class="mt-4 chunky-button bg-secondary text-on-secondary py-3 px-6 rounded-lg text-sm font-bold text-center mx-auto">Резервирай рожден ден</button>
+</div>
+</div>
+<!-- Art Fun Days -->
+<div class="md:col-span-4 art-card bg-tertiary text-on-tertiary-container rounded-xl p-md flex flex-col justify-between items-start">
+<div class="mb-4">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-4xl text-tertiary-fixed">palette</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed px-2 py-1 rounded text-[10px] font-bold uppercase">Уикенди</span>
+</div>
+<h3 class="text-2xl font-bold mt-4 text-white">Дни за арт&nbsp;забавление</h3>
+<p class="mt-2 text-sm text-tertiary-fixed/90">Свободна игра и изследване за дъждовните дни или просто когато творческият порив се появи!</p>
+</div>
+<button class="chunky-button-secondary bg-tertiary-fixed text-on-tertiary-fixed py-3 px-6 rounded-lg text-sm font-bold text-center mx-auto">Виж календара</button>
+</div>
+<!-- Holiday Workshops -->
+<div class="md:col-span-4 art-card bg-secondary-container text-on-secondary-container rounded-xl p-md flex flex-col justify-between items-start">
+<div class="mb-4">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-4xl text-secondary">ac_unit</span>
+</div>
+<h3 class="text-2xl font-bold mt-4">Празнични&nbsp;ателиета</h3>
+<p class="mt-2 text-sm opacity-90">Сезонни творения - от коледни играчки до пролетна градина. Магически спомени всеки сезон.</p>
+</div>
+<button class="chunky-button bg-secondary text-on-secondary py-3 px-6 rounded-lg text-sm font-bold text-center mx-auto">Запиши се за сезонни</button>
+</div>
+<!-- Custom Events -->
+<div class="md:col-span-8 art-card bg-surface-container-highest border border-outline-variant rounded-xl p-md flex flex-col md:flex-row gap-md">
+<div class="md:w-1/2 flex flex-col justify-between py-2 items-start">
+<div class="space-y-sm">
+<h3 class="text-2xl font-bold text-primary">Индивидуални&nbsp;събития</h3>
+<p class="text-on-surface-variant text-sm">Имате уникална идея? Организираме семейни срещи, групови работилници и частни сесии, съобразени с вашата тема.</p>
+<a class="text-secondary font-bold flex items-center gap-1 hover:underline text-sm" href="#inquiry">
+                                Споделете ни вашата идея <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<button class="mt-4 chunky-button bg-secondary text-on-secondary py-3 px-6 rounded-lg text-sm font-bold text-center mx-auto">Запитване за събитие</button>
+</div>
+<div class="md:w-1/2 rounded-lg overflow-hidden">
+<img alt="Общност" class="w-full h-48 md:h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAT1EPUp1EDjKIhnuC9wReMa56YkkyaV75zFN4t5_leY8srFikqi_AkOTrK4PN6W8Q6uX1PYtm2-hefeM4ISXV6zOCS5CRsvpHOugznXUvcgyIZ4FYUxWZWJTaFKC-setNPTMIdW9ee7WjvVWd0D8FJFDFHAzaob9DUYgfqQK9Oa4qYT0lqIRCmIyoXNsWKODTaO51cWZUvozWpRtC61LCeSJ4Vl6z1PFDlGe96d0xVhEYpIX4QxD5higJdnxoEGKhyoL1rNJgENRg">
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery Section -->
+<section class="px-margin-mobile md:px-margin-desktop py-xl">
+<div class="flex justify-between items-end mb-lg">
+<div>
+<h2 class="text-3xl font-bold text-primary">Спомени от студиото</h2>
+<p class="text-on-surface-variant">Погледнете усмивките и шедьоврите, които създадохме.</p>
+</div>
+<div class="hidden md:flex gap-2">
+<button class="p-2 border border-outline rounded-full hover:bg-surface-variant transition-colors" id="prevBtn"><span class="material-symbols-outlined">chevron_left</span></button>
+<button class="p-2 border border-outline rounded-full hover:bg-surface-variant transition-colors" id="nextBtn"><span class="material-symbols-outlined">chevron_right</span></button>
+</div>
+</div>
+<div class="flex overflow-x-auto gap-md pb-4 snap-x no-scrollbar" id="galleryContainer">
+<div class="min-w-[280px] md:min-w-[400px] snap-center">
+<img alt="Арт детайл" class="w-full h-80 object-cover rounded-xl shadow-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMpBJ2uHDRzEV3snRYPH993jhaDT2iqiImR0Fb_qAWV_Wn-hcgArCgzy-_UIz9qCLMmzTf39kBHLmYG0Z-uhLMEx713_GH84cCnsaTmmsezwrGKYHGL-dlHHm0psNo7pzwqTYoX_q8EfgyCl0lavyyzB3rYA_M4_PSeTesJ_ae9fPp7EqAHQgdipW_3NW1nzxMN-aguOFP0KLBMZZrQphZ1zA1vPKT5MCumVPjCGs30ebVzbU1PJHfCczB6I5VpLnHHKZiwGQz00k">
+</div>
+<div class="min-w-[280px] md:min-w-[400px] snap-center">
+<img alt="Коледна работилница" class="w-full h-80 object-cover rounded-xl shadow-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrKpXn31QFWaDlxssxcOUWQ-miNrKf6vPR5H9UQ0iHq37vcIgwoeX1CKcXFBPrJNmxwgJ9Z4hRoGWS8zi85DwWXQqOh0a89sGElQok9dKWEa6TxsRglIiRAAthTkh3pxRZavTDTe_vNrOkKh1q287fxSZpmnvMKEVgC7y0hEXK3xaio3-oKE3ug03ThbFOSxhuwq1zfgRuoOwRIuTbKNuUT82j68JJmu5kYQkRY3fEkFJyMxTt_XJFyZwyJkOckoY4aXT5f_aO_uM">
+</div>
+<div class="min-w-[280px] md:min-w-[400px] snap-center">
+<img alt="Творения" class="w-full h-80 object-cover rounded-xl shadow-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyE1BzXieOY1qCuaD3ZyeXuAyHNnP4-7CmViAP2OlVkCYGQus3aWhCqvIVEcDNYYyoeBjsA3ispYsSMwX3RdBgK0b1fxF7XwUGlHO5jYYaX-5jfB6e6ttrXIF2dYmjqV3zOSAOz8TC_vu0nWCybRDuJVHwd9mUiHAjiyc2Z1AqpGVCSL-m-6MnsFpKL9ZrkCn-uvSXNuVoju5lswjxsopKIgIwHMNsPY3G3Y9IEs6_xrK0sW6jQaXGO2S30Gq2aMhjOh3zuqHOztM">
+</div>
+<div class="min-w-[280px] md:min-w-[400px] snap-center">
+<img alt="Процес" class="w-full h-80 object-cover rounded-xl shadow-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYOoQqzEgMXd_k7CuzLzEXRmAd9QF20UR5T0VtH0psYSGFvta4Pu1QSczHkH7cI_3GLRfR7GCxMtTugI1caaTXb_DjWVm8BaF5epgFm2O-SXFOX4zExUno26zvh2CZXTsekqRYykFOMLIuBT0BFhaG2NDcB5yObwRay55oRc38REdlgt8aD-bhaUHNEU5kaQhOtKGRMoBjsAcyXBOTkXHfI4pilbMsiZAnGwq7k6GgQh-ln68CpaJY-h3ru2thrmmcQveH8iZL29Y">
+</div>
+</div>
+</section>
+<!-- Inquiry Form Section -->
+<section class="px-margin-mobile md:px-margin-desktop py-xl" id="inquiry">
+<div class="bg-surface-container-high rounded-[48px] overflow-hidden flex flex-col md:flex-row shadow-2xl border border-outline-variant/30">
+<div class="md:w-2/5 p-lg space-y-md bg-primary text-on-primary">
+<h2 class="text-3xl font-bold">Планирайте събитие</h2>
+<p class="opacity-90 leading-relaxed">Готови ли сте да организирате незабравимо преживяване? Попълнете формата и нашият координатор ще се свърже с вас в рамките на 24 часа.</p>
+<div class="space-y-sm pt-6">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined p-2 bg-primary-container/30 rounded-full">call</span>
+<span class="font-medium">+359 888 123 456</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined p-2 bg-primary-container/30 rounded-full">location_on</span>
+<span class="font-medium">София, Арт Район</span>
+</div>
+</div>
+</div>
+<div class="md:w-3/5 p-lg bg-surface-container-lowest">
+<form class="space-y-4">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="space-y-1">
+<label class="text-sm font-bold text-on-surface-variant">Вашето име</label>
+<input class="w-full h-12 px-4 bg-surface-container-low border border-outline-variant focus:border-secondary focus:ring-1 focus:ring-secondary rounded-lg transition-all outline-none" placeholder="Иван Иванов" type="text">
+</div>
+<div class="space-y-1">
+<label class="text-sm font-bold text-on-surface-variant">Имейл адрес</label>
+<input class="w-full h-12 px-4 bg-surface-container-low border border-outline-variant focus:border-secondary focus:ring-1 focus:ring-secondary rounded-lg transition-all outline-none" placeholder="hello@example.com" type="email">
+</div>
+</div>
+<div class="space-y-1">
+<label class="text-sm font-bold text-on-surface-variant">Тип събитие</label>
+<select class="w-full h-12 px-4 bg-surface-container-low border border-outline-variant focus:border-secondary focus:ring-1 focus:ring-secondary rounded-lg transition-all outline-none appearance-none">
+<option>Рожден ден</option>
+<option>Празнична работилница</option>
+<option>Арт ден забавление</option>
+<option>Индивидуално събитие</option>
+</select>
+</div>
+<div class="space-y-1">
+<label class="text-sm font-bold text-on-surface-variant">Разкажете ни за вашия празник</label>
+<textarea class="w-full p-4 bg-surface-container-low border border-outline-variant focus:border-secondary focus:ring-1 focus:ring-secondary rounded-lg transition-all outline-none" placeholder="Брой деца, възрастова група, предпочитана дата..." rows="4"></textarea>
+</div>
+<button class="w-full chunky-button bg-secondary text-on-secondary py-4 rounded-lg text-lg font-bold" type="submit">Изпрати запитване</button>
+</form>
+</div>
 </div>
 </section>
 </main>
 <!-- Footer -->
-<footer class="w-full rounded-t-[48px] bg-surface-container-low border-t border-outline-variant py-xl mt-xl flex flex-col px-margin-mobile md:px-margin-desktop text-left items-start">
-<div class="font-headline-md text-headline-md text-primary mb-md italic">ШиШарка Арт Студио</div>
-<div class="flex flex-wrap gap-md mb-lg">
-<a class="font-body-md text-body-md text-on-surface-variant opacity-80 hover:text-secondary transition-colors" href="#">Политика за поверителност</a>
-<a class="font-body-md text-body-md text-on-surface-variant opacity-80 hover:text-secondary transition-colors" href="#">Условия за ползване</a>
-<a class="font-body-md text-body-md text-on-surface-variant opacity-80 hover:text-secondary transition-colors" href="#">Правила на студиото</a>
+<footer class="w-full rounded-t-[48px] bg-surface-container-low border-t border-outline-variant/30 flex flex-col items-center px-margin-mobile md:px-margin-desktop py-xl mt-xl text-center">
+<div class="text-2xl text-primary mb-md italic font-extrabold">ШиШарка Арт Студио</div>
+<div class="flex flex-wrap justify-center gap-md mb-lg">
+<a class="text-sm font-medium text-on-surface-variant opacity-80 hover:text-secondary transition-colors" href="#">Политика за поверителност</a>
+<a class="text-sm font-medium text-on-surface-variant opacity-80 hover:text-secondary transition-colors" href="#">Общи условия</a>
+<a class="text-sm font-medium text-on-surface-variant opacity-80 hover:text-secondary transition-colors" href="#">Правила на студиото</a>
 </div>
-<p class="font-body-md text-body-md text-on-surface-variant opacity-80 max-w-md">
-            © 2024 ШиШарка Арт Студио. Създадено с магия и шишарки.
-        </p>
+<p class="text-sm text-on-surface-variant opacity-60">© 2024 ШиШарка Арт Студио. Създадено с магия и шишарки.</p>
+<div class="mt-md flex gap-4">
+<a class="text-primary hover:text-secondary transition-colors" href="#"><span class="material-symbols-outlined">qr_code_2</span></a>
+<a class="text-primary hover:text-secondary transition-colors" href="#"><span class="material-symbols-outlined">photo_camera</span></a>
+</div>
 </footer>
+<!-- Mobile FAB -->
+<div class="fixed bottom-6 right-6 md:hidden">
+<button class="w-14 h-14 bg-secondary text-on-secondary rounded-full shadow-2xl flex items-center justify-center chunky-button">
+<span class="material-symbols-outlined">chat</span>
+</button>
+</div>
 <script>
-        // Simple form submission animation
-        document.querySelector('form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const btn = e.target.querySelector('button');
-            const originalText = btn.innerText;
-            btn.innerText = 'Изпращане...';
-            btn.style.opacity = '0.7';
-            btn.disabled = true;
+        document.addEventListener('DOMContentLoaded', () => {
+            const container = document.getElementById('galleryContainer');
+            const nextBtn = document.getElementById('nextBtn');
+            const prevBtn = document.getElementById('prevBtn');
             
-            setTimeout(() => {
-                btn.innerText = 'Съобщението е изпратено! ✨';
-                btn.classList.replace('bg-primary', 'bg-secondary');
-                e.target.reset();
-                setTimeout(() => {
-                    btn.innerText = originalText;
-                    btn.classList.replace('bg-secondary', 'bg-primary');
-                    btn.style.opacity = '1';
-                    btn.disabled = false;
-                }, 3000);
-            }, 1500);
+            if(nextBtn && prevBtn && container) {
+                nextBtn.onclick = () => container.scrollBy({ left: 400, behavior: 'smooth' });
+                prevBtn.onclick = () => container.scrollBy({ left: -400, behavior: 'smooth' });
+            }
         });
     </script>
 
