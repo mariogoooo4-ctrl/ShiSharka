@@ -1,0 +1,369 @@
+<!DOCTYPE html><html class="light" lang="bg"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Класове | ШиШарка Арт Студио</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error": "#ba1a1a",
+                        "on-error-container": "#93000a",
+                        "secondary-fixed": "#94f990",
+                        "surface-bright": "#fbf9f5",
+                        "tertiary-fixed": "#ffdf9e",
+                        "on-error": "#ffffff",
+                        "inverse-on-surface": "#f2f0ed",
+                        "primary": "#5f3e32",
+                        "on-secondary-fixed-variant": "#005313",
+                        "surface-container": "#efeeea",
+                        "on-tertiary-fixed-variant": "#5b4300",
+                        "tertiary-container": "#785900",
+                        "inverse-primary": "#ebbcac",
+                        "outline-variant": "#d4c3bd",
+                        "on-tertiary": "#ffffff",
+                        "tertiary": "#5a4200",
+                        "on-primary-fixed": "#2e150b",
+                        "on-tertiary-container": "#ffd16c",
+                        "on-surface-variant": "#504440",
+                        "secondary-fixed-dim": "#78dc77",
+                        "error-container": "#ffdad6",
+                        "primary-fixed-dim": "#ebbcac",
+                        "background": "#fbf9f5",
+                        "surface-tint": "#7a5649",
+                        "on-primary-container": "#fdcdbc",
+                        "secondary": "#006e1c",
+                        "on-surface": "#1b1c1a",
+                        "tertiary-fixed-dim": "#fabd00",
+                        "primary-fixed": "#ffdbcf",
+                        "surface": "#fbf9f5",
+                        "on-primary": "#ffffff",
+                        "on-secondary-container": "#00731e",
+                        "on-background": "#1b1c1a",
+                        "surface-variant": "#e4e2de",
+                        "on-tertiary-fixed": "#261a00",
+                        "on-primary-fixed-variant": "#603f33",
+                        "surface-container-high": "#eae8e4",
+                        "surface-container-low": "#f5f3ef",
+                        "on-secondary": "#ffffff",
+                        "primary-container": "#795548",
+                        "outline": "#82746f",
+                        "surface-container-highest": "#e4e2de",
+                        "inverse-surface": "#30312e",
+                        "surface-dim": "#dbdad6",
+                        "secondary-container": "#91f78e",
+                        "on-secondary-fixed": "#002204",
+                        "surface-container-lowest": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "16px",
+                        "xl": "24px",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "lg": "48px",
+                        "md": "24px",
+                        "xl": "80px",
+                        "xs": "4px",
+                        "sm": "12px",
+                        "margin-mobile": "16px",
+                        "gutter": "24px",
+                        "margin-desktop": "64px",
+                        "base": "8px"
+                    },
+                    "fontFamily": {
+                        "sans": ["Montserrat", "sans-serif"],
+                        "headline-xl": ["Montserrat"],
+                        "label-md": ["Montserrat"],
+                        "body-lg": ["Montserrat"],
+                        "headline-lg": ["Montserrat"],
+                        "headline-xl-mobile": ["Montserrat"],
+                        "body-md": ["Montserrat"],
+                        "headline-md": ["Montserrat"]
+                    },
+                    "fontSize": {
+                        "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                        "headline-xl-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "800"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Montserrat', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .chunky-button {
+            box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
+            transition: all 0.1s ease-in-out;
+        }
+        .chunky-button:active {
+            transform: translateY(2px);
+            box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.1);
+        }
+        .organic-card {
+            background-color: #FFFDF9;
+            box-shadow: 0 8px 24px -4px rgba(95, 62, 50, 0.08);
+        }
+        .paint-stroke-bg {
+            background-image: radial-gradient(circle at 2px 2px, rgba(95, 62, 50, 0.05) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+        .age-badge {
+            clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md overflow-x-hidden paint-stroke-bg">
+<!-- TopNavBar -->
+<header class="w-full sticky top-0 z-50 bg-surface/80 backdrop-blur-md shadow-[0_4px_12px_rgba(95,62,50,0.1)]">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-7xl mx-auto">
+<a class="font-headline-md text-headline-md text-primary italic" href="/">
+                ШиШарка Арт Студио
+            </a>
+<nav class="hidden md:flex items-center gap-md">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#">Начало</a>
+<a class="text-secondary font-bold border-b-2 border-secondary-fixed-dim pb-1 font-label-md text-label-md" href="#">Класове</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#">Събития</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#">Контакт</a>
+<button class="ml-4 bg-secondary text-on-secondary px-6 py-2 rounded-lg chunky-button font-label-md text-label-md hover:scale-105 transition-transform">
+                    Запиши се
+                </button>
+</nav>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop py-lg">
+<!-- Hero Section -->
+<section class="mb-xl text-center md:text-left flex flex-col md:flex-row items-center gap-lg">
+<div class="flex-1">
+<h1 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary mb-md">
+                    Освободи своя <span class="text-secondary">вътрешен артист</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-lg">
+                    Добре дошли в ШиШарка, където всяко движение на четката разказва история. Нашите внимателно подбрани класове са създадени, за да подхранват креативността във всички възрастови групи чрез практическо изследване и забавни техники.
+                </p>
+<div class="flex flex-wrap gap-sm justify-center md:justify-start">
+<span class="bg-secondary-container text-on-secondary-container px-4 py-2 rounded-xl text-label-md font-label-md flex items-center gap-xs">
+<span class="material-symbols-outlined text-[18px]">brush</span> Акварел
+                    </span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed px-4 py-2 rounded-xl text-label-md font-label-md flex items-center gap-xs">
+<span class="material-symbols-outlined text-[18px]">texture</span> Работа с глина
+                    </span>
+<span class="bg-primary-fixed text-on-primary-fixed px-4 py-2 rounded-xl text-label-md font-label-md flex items-center gap-xs">
+<span class="material-symbols-outlined text-[18px]">palette</span> Акрил
+                    </span>
+</div>
+</div>
+<div class="flex-1 w-full relative">
+<div class="absolute -top-4 -left-4 w-24 h-24 bg-tertiary-fixed-dim rounded-full opacity-20 animate-pulse"></div>
+<div class="rounded-xl overflow-hidden shadow-xl transform rotate-2">
+<img class="w-full aspect-video object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhPrrAyPi3dG_H5qGf5PQyd2IFAasuKfou3nba4yQ2XBFz_H7ZtFzgp6d9GGleVvXBKjSRcG3TWUo5kAEPh7oPVOTyM7IPej_eYxnouduxrFKlM_kKOYsh70TEBpvz74sGLI9-FBpdwg6F2OIJaJ6JEkFwCExIH4vcG-vSr-S3sr6NBl9G50c-gwNmdY3PsM9ILYoZT8NqMnQfPWvehE31ErIr4NqJinLYewR3LCM7f5gRlChdRKCe1cR80ktutA3ZNOk4YWQ7QqY">
+</div>
+<div class="absolute -bottom-4 -right-4 w-32 h-32 bg-secondary-fixed rounded-full opacity-20"></div>
+</div>
+</section>
+<!-- Classes Grid -->
+<div class="space-y-xl">
+<!-- Category: Little Sprouts (4-6) -->
+<div class="space-y-md">
+<div class="flex items-end justify-between border-b-2 border-outline-variant pb-2">
+<h2 class="font-headline-lg text-headline-lg text-primary">Малки филизи <span class="text-on-surface-variant font-normal">(4-6 г.)</span></h2>
+<span class="text-label-md font-label-md text-secondary">3 налични класа</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+<!-- Class Card 1 -->
+<div class="organic-card rounded-lg overflow-hidden border border-outline-variant flex flex-col group transition-all duration-700 opacity-100 translate-y-0">
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiesUoz2AB617ObczxrjnMJEyzulEAXbqKysRmo0qPyAF877sTCmmb7cgVAAtZTuDJZqD6yOSioLDu7uwXoaytqhsz6z28an7T1Wj1AXrm9FJhyU3ngBJMsfZnRK6GNV3yXw_ZhWPvWuQmcxtXulULMDQWFaeJ4JtNEj6iYMHQKP_81IMLndySNkTCkEnQXV9XuYfmvrL0ce5xNqKQGs7vCXzFz9ZwVf2OefH1nX-dzqrJMgsX40-xfYQYf7ZC6_nrAwW6ppaI5Sc">
+<div class="absolute top-4 left-0 bg-tertiary-fixed text-on-tertiary-fixed px-4 py-1 age-badge font-label-md text-label-md">
+                                Пон &amp; Сря
+                            </div>
+</div>
+<div class="p-md flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-primary mb-xs">Магия с&nbsp;пръсти</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md flex-grow">Изследователска сесия, фокусирана върху сетивното възприятие и смесването на цветове чрез тактилни&nbsp;техники.</p>
+<div class="flex items-center justify-between mb-md">
+<div class="flex items-center gap-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-primary">schedule</span>
+<span class="text-label-md">10:00 - 11:30</span>
+</div>
+<span class="text-headline-md text-secondary">23 EUR</span>
+</div>
+<button class="w-full bg-secondary text-on-secondary py-3 rounded-lg chunky-button font-label-md text-label-md mx-auto flex justify-center items-center whitespace-nowrap">
+                                Резервирай сега
+                            </button>
+</div>
+</div>
+<!-- Class Card 2 -->
+<div class="organic-card rounded-lg overflow-hidden border border-outline-variant flex flex-col group transition-all duration-700 opacity-100 translate-y-0">
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAa9PeXK6tVVqHbVyRLyNqCyjwfgUzEmHMWUmUP3qW_U2RqoiHS5pvHerns4IoFJPJFjrzc3DB6AcLXP2B5ost79QpyhAqy7m1ulY8EtdkC-yiecbTDsm_KcgbaoFYX8VxcvUanCHFTRnVaqUS_znOVG1KIfuPdPQcWJM1neHfGZLaiHwZ51qxjJl9WFVBsxvFvrJoCUJkaWZId4zuBttdbs9InwMsFmEHkmYACK_ju4f2p8nDB0s9BVsCwrO39AaAC5oooi15Jgsg">
+<div class="absolute top-4 left-0 bg-tertiary-fixed text-on-tertiary-fixed px-4 py-1 age-badge font-label-md text-label-md">
+                                Петък
+                            </div>
+</div>
+<div class="p-md flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-primary mb-xs">Горски колаж</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md flex-grow">Комбиниране на съкровища от природата с хартия и лепило за създаване на органични 3D&nbsp;шедьоври.</p>
+<div class="flex items-center justify-between mb-md">
+<div class="flex items-center gap-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-primary">schedule</span>
+<span class="text-label-md">14:00 - 15:30</span>
+</div>
+<span class="text-headline-md text-secondary">20 EUR</span>
+</div>
+<button class="w-full bg-secondary text-on-secondary py-3 rounded-lg chunky-button font-label-md text-label-md mx-auto flex justify-center items-center whitespace-nowrap">
+                                Резервирай сега
+                            </button>
+</div>
+</div>
+<!-- Class Card 3 -->
+<div class="bg-surface-container rounded-lg border-2 border-dashed border-outline-variant flex flex-col items-center justify-center p-md text-center opacity-80">
+<span class="material-symbols-outlined text-primary text-5xl mb-md">brush</span>
+<h3 class="font-headline-md text-headline-md text-primary">Очаквайте още!</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Подготвяме нови преживявания за нашите малки творци.</p>
+</div>
+</div>
+</div>
+<!-- Category: Rising Artists (7-9) -->
+<div class="space-y-md">
+<div class="flex items-end justify-between border-b-2 border-outline-variant pb-2">
+<h2 class="font-headline-lg text-headline-lg text-primary">Напредващи таланти <span class="text-on-surface-variant font-normal">(7-9 г.)</span></h2>
+<span class="text-label-md font-label-md text-secondary">2 налични класа</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<!-- Class Card -->
+<div class="organic-card rounded-lg overflow-hidden border border-outline-variant flex flex-col md:flex-row group transition-all duration-700 opacity-100 translate-y-0">
+<div class="md:w-1/2 relative h-64 md:h-full">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8DC4uLfTlqbqe9byImQLVjhHMoY2O8XfPHRwlcm-G67wu-FfFrIMUKmb9GKSXFbUTr1VZir-9OcEoYkATCu4yUD1I3QqQgvOfs-1PhYhkHd0eGik-AHPs_2xjHVh4bRsrcllOrAP2NM5a1W9z2GiLBSnCH5Lzgbip0700h0m1G74Rooav16rAr2Jo1QT-yJSOagJYMWCwRW9zv04_fvRjA6rut1aCpM5CcbYZkh0m7Bo8l32QaZq46ytQKdb2abFnBhjr8rusEFQ">
+</div>
+<div class="md:w-1/2 p-md flex flex-col">
+<div class="bg-primary-fixed text-on-primary-fixed w-fit px-3 py-1 rounded-full text-[12px] font-bold mb-sm">УИКЕНД</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-xs">Магия с&nbsp;пръсти</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md">Научете деликатния баланс между вода и пигмент. Учениците ще създават мечтани пейзажи и&nbsp;портрети.</p>
+<ul class="space-y-xs mb-md text-left inline-block">
+<li class="flex items-center gap-xs font-body-md text-body-md"><span class="material-symbols-outlined text-secondary text-base">check_circle</span> Техника мокро в мокро</li>
+<li class="flex items-center gap-xs font-body-md text-body-md"><span class="material-symbols-outlined text-secondary text-base">check_circle</span> Основи на цветознанието</li>
+</ul>
+<div class="flex items-center justify-between mt-auto">
+<span class="text-headline-md text-secondary">28 EUR</span>
+<button class="bg-secondary text-on-secondary px-8 py-3 rounded-lg chunky-button font-label-md text-label-md flex justify-center items-center whitespace-nowrap mx-auto">
+                                    Резервирай
+                                </button>
+</div>
+</div>
+</div>
+<!-- Class Card -->
+<div class="organic-card rounded-lg overflow-hidden border border-outline-variant flex flex-col md:flex-row group transition-all duration-700 opacity-100 translate-y-0">
+<div class="md:w-1/2 relative h-64 md:h-full">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAecrI9U2wmMT2TQpu_lXibXn9gy-ja-2iqchwbvBLWL1DBJjsEDQv4ufm6CBVmAY2nh9qKemEwkYPrWFXFKOR7U3xkAksLvPhuZ7QuU6ttCkF_u_nv4VdX8RT1C9t06e-Cg7IAzjwp6Bnx3SqR-yOocnxMR3vaf8Xaa4hIoMNNCqy9Wc46JXIkYxHCTqI46wTBq2PEvZ2iryinxovKcKu2lrGjzrqv9B2g2fewbAKxzeCmxKF_C-BOdh78ociUvGhXsE6b4K_rUhE">
+</div>
+<div class="md:w-1/2 p-md flex flex-col">
+<div class="bg-primary-fixed text-on-primary-fixed w-fit px-3 py-1 rounded-full text-[12px] font-bold mb-sm">ЧЕТВЪРТЪК</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-xs">3D Творци с глина</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md">От плоски форми до динамични фигури. Децата учат основите на ръчното моделиране и&nbsp;декорация.</p>
+<ul class="space-y-xs mb-md text-left inline-block">
+<li class="flex items-center gap-xs font-body-md text-body-md"><span class="material-symbols-outlined text-secondary text-base">check_circle</span> Методи на притискане</li>
+<li class="flex items-center gap-xs font-body-md text-body-md"><span class="material-symbols-outlined text-secondary text-base">check_circle</span> Подглазурна живопис</li>
+</ul>
+<div class="flex items-center justify-between mt-auto">
+<span class="text-headline-md text-secondary">30 EUR</span>
+<button class="bg-secondary text-on-secondary px-8 py-3 rounded-lg chunky-button font-label-md text-label-md flex justify-center items-center whitespace-nowrap mx-auto">
+                                    Резервирай
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Category: Studio Masters (10-12) -->
+<div class="space-y-md">
+<div class="flex items-end justify-between border-b-2 border-outline-variant pb-2">
+<h2 class="font-headline-lg text-headline-lg text-primary">Майстори на студиото <span class="text-on-surface-variant font-normal">(10-12 г.)</span></h2>
+<span class="text-label-md font-label-md text-secondary">Ограничени места</span>
+</div>
+<div class="relative overflow-hidden rounded-xl bg-surface-container-high p-lg">
+<div class="absolute top-0 right-0 w-64 h-64 bg-secondary opacity-5 -translate-y-1/2 translate-x-1/2 rounded-full"></div>
+<div class="flex flex-col md:flex-row gap-lg items-center relative z-10">
+<div class="md:w-1/3">
+<div class="aspect-square rounded-full border-8 border-white shadow-lg overflow-hidden">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGcayjj3Ttq23c33eVkg7jfptr7sAlIdD_F4ZmGw-I7w64VLqt610nQitUKLey6CYr-kxKvTgsTZGzYYcuJ8WOCgxYQ9KplxFWIPHELxMLF8ZJngKl7TAhx7yWkPDJXz0pini3iGfO82YwZIy2OSTK4QSfSDJZirOR7tymHJbp-yviOk8XvivGbYB8FqwAbAWRgpJTMvGSv4gihkHp6upcbbVWIbSXdLBTjGIHVkmFddw_0dZUiceW-8ayCIq4K8t6z8PA22fC6eI">
+</div>
+</div>
+<div class="md:w-2/3 space-y-md text-center md:text-left">
+<div class="inline-flex items-center gap-xs bg-tertiary text-on-tertiary px-4 py-1 rounded-full text-label-md font-label-md mx-auto md:mx-0">
+<span class="material-symbols-outlined text-[16px]">stars</span> Напреднала програма
+                            </div>
+<h3 class="font-headline-xl-mobile md:font-headline-lg text-headline-xl-mobile md:text-headline-lg text-primary">Майсторски клас: Импресионистичен акрил</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                                Дълбоко потапяне в светлината и цвета. По-големите ученици ще изследват техниките на майсторите, работейки върху големи платна в рамките на 4-седмичен курс.
+                            </p>
+<div class="grid grid-cols-2 gap-md text-left">
+<div class="bg-white/50 p-sm rounded-lg border border-outline-variant">
+<p class="text-label-md font-label-md text-primary">Следваща група</p>
+<p class="text-body-md">12 Окт - 09 Ное</p>
+</div>
+<div class="bg-white/50 p-sm rounded-lg border border-outline-variant">
+<p class="text-label-md font-label-md text-primary">Обща цена</p>
+<p class="text-body-md">120 EUR / 4 сесии</p>
+</div>
+</div>
+<button class="bg-primary text-on-primary px-xl py-4 rounded-lg chunky-button font-label-md text-label-md flex items-center justify-center gap-md mx-auto md:mx-0 w-full md:w-auto whitespace-nowrap">
+                                ЗАПАЗИ МЯСТО <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-t-[48px] bg-surface-container-low border-t border-outline-variant">
+<div class="flex flex-col items-center w-full px-margin-mobile md:px-margin-desktop py-xl mt-xl text-center max-w-7xl mx-auto">
+<div class="font-headline-md text-headline-md text-primary mb-md">ШиШарка Арт Студио</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-lg mb-lg">
+                Създаваме безопасно пространство за малки ръчички, които правят големи бели и красиви спомени. Присъединете се към нашата общност днес.
+            </p>
+<div class="flex gap-md mb-lg">
+<a class="text-on-surface-variant opacity-80 hover:text-secondary transition-colors font-body-md text-body-md" href="#">Политика за поверителност</a>
+<a class="text-on-surface-variant opacity-80 hover:text-secondary transition-colors font-body-md text-body-md" href="#">Условия за ползване</a>
+<a class="text-on-surface-variant opacity-80 hover:text-secondary transition-colors font-body-md text-body-md" href="#">Правила на студиото</a>
+</div>
+<div class="text-primary font-body-md text-body-md opacity-60">
+                © 2024 ШиШарка Арт Студио. Създадено с магия и шишарки.
+            </div>
+</div>
+</footer>
+<script>
+        const observerOptions = { threshold: 0.1 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-8');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.organic-card').forEach(card => {
+            card.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-8');
+            observer.observe(card);
+        });
+    </script>
+
+
+</body></html>
